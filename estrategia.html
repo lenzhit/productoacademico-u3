@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CarServ - Car Repair HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/car-rear-solid.svg" rel="icon" type="svg">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- CDN BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .definition-section {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        
+        .definition-card {
+            border: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .definition-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .definition-img {
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid rgb(44, 71, 118);
+            ;
+        }
+        
+        .definition-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 20px;
+        }
+        
+        .definition-body {
+            font-size: 18px;
+            color: #666;
+            margin-top: 10px;
+        }
+        
+        .definition-text {
+            font-size: 16px;
+            color: #444;
+            margin-top: 15px;
+            text-align: justify;
+        }
+        
+        .definition-highlight {
+            color: rgb(44, 71, 118);
+            font-weight: bold;
+        }
+        
+        .step-container {
+            margin: 40px 0;
+        }
+        
+        .step {
+            text-align: center;
+            padding: 30px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .step:hover {
+            transform: scale(1.05);
+        }
+        
+        .step-icon {
+            font-size: 40px;
+            color: rgb(44, 71, 118);
+            margin-bottom: 20px;
+        }
+        
+        .step-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .step-description {
+            font-size: 16px;
+            color: #666;
+        }
+        
+        .step-divider {
+            width: 50px;
+            height: 3px;
+            background-color: rgb(44, 71, 118);
+            ;
+            margin: 20px auto;
+        }
+        
+        .arrow {
+            width: 60px;
+            height: 60px;
+            background-color: rgb(44, 71, 118);
+            ;
+            border-radius: 50%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto;
+            font-size: 24px;
+        }
+        
+        .tips-section {
+            background-color: #ffffff;
+            padding: 50px 0;
+        }
+        
+        .tips-title {
+            font-size: 32px;
+            font-weight: bold;
+            color: rgb(44, 71, 118);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .tip-card {
+            border: none;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+        
+        .tip-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .tip-icon {
+            font-size: 50px;
+            color: #ffffff;
+            background-color: rgb(44, 71, 118);
+            ;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin: 20px auto;
+        }
+        
+        .tip-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin: 20px 0;
+        }
+        
+        .tip-body {
+            font-size: 16px;
+            color: #666;
+        }
+        
+        .examples-section {
+            padding: 60px 0;
+            background-color: #ffffff;
+        }
+        
+        .examples-title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #343a40;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .example-card {
+            background-color: white;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+        
+        .example-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .example-img {
+            height: 250px;
+            object-fit: cover;
+            width: 100%;
+        }
+        
+        .example-body {
+            padding: 20px;
+        }
+        
+        .example-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(44, 71, 118);
+            margin-bottom: 15px;
+        }
+        
+        .example-text {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+        
+        .example-highlight {
+            color: rgb(44, 71, 118);
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body class="">
+
+
+    <!-- Navbar -->
+    <nav class=" fixed-top navbar navbar-expand-lg bg-white  navbar-light shadow p-0" id="navbar">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5" style="color: rgb(44, 71, 118);">
+            <h2 class="m-0 "><i class="fa-solid fa-microchip me-2"></i>TeamAMD</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4 bg-dark" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+
+                <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                <a href="estrategia.html" class="nav-item nav-link">Planificación Estratégica</a>
+                <a href="CMI.html" class="nav-item nav-link">CMI</a>
+                <a href="RSE.html" class="nav-item nav-link">RSE</a>
+                <a href="riesgos.html" class="nav-item nav-link">G. de Riesgos</a>
+                <a href="CRM.html" class="nav-item nav-link">CRM</a>
+                <a href="rendimiento.html" class="nav-item nav-link">G. del Rendimiento</a>
+
+
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <section class="container definitions-section" style="margin-top: 120px;">
+        <div class="row align-items-center">
+            <!-- Imagen para Estrategia -->
+            <div class="col-md-6">
+                <img class="w-100" src="https://blog.formaciongerencial.com/wp-content/uploads/2017/08/Estratgeias-de-marketing-ganadoras.jpg" class="definition-image">
+            </div>
+            <!-- Texto para Estrategia -->
+            <div class="col-md-6">
+                <h2 class="definition-title" style="color: rgb(44, 71, 118);">¿Qué es la Estrategia?</h2>
+                <p class="definition-text">
+                    La <strong>estrategia</strong> es un plan de acción diseñado para alcanzar un objetivo específico. En el contexto empresarial, la estrategia implica la toma de decisiones sobre cómo utilizar los recursos de la organización para aprovechar
+                    oportunidades y mitigar riesgos en el mercado. La estrategia define el camino que la empresa debe seguir para conseguir sus metas a largo plazo, y es crucial para garantizar la competitividad y la sostenibilidad en un entorno cambiante.
+                </p>
+            </div>
+        </div>
+
+        <div class="row align-items-center mt-5">
+            <!-- Texto para Planificación Estratégica -->
+            <div class="col-md-6 order-md-2">
+                <h2 class="definition-title" style="color: rgb(44, 71, 118);">¿Qué es la Planificación Estratégica?</h2>
+                <p class="definition-text">
+                    La <strong>planificación estratégica</strong> es el proceso mediante el cual una organización define su estrategia o dirección y toma decisiones sobre cómo asignar sus recursos para alcanzar sus objetivos. Este proceso incluye el análisis
+                    del entorno interno y externo, la formulación de metas claras, el desarrollo de planes de acción y la evaluación continua de los resultados. La planificación estratégica es esencial para alinear las acciones de la empresa con su visión
+                    y misión, y para adaptarse a las condiciones cambiantes del mercado.
+                </p>
+            </div>
+            <!-- Imagen para Planificación Estratégica -->
+            <div class="col-md-6 order-md-1">
+                <img class="w-100" src="https://www.mba-asturias.com/wp-content/uploads/2022/12/proceso-planificacion-estrategica-800x528.jpg" alt="Planificación Estratégica" class="definition-image">
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-5" style="color: rgb(44, 71, 118);">Proceso de planificación estratégica</h2>
+
+        <!-- Step 1 -->
+        <div class="row step-container">
+            <div class="col-lg-12 step">
+                <div class="step-icon">
+                    <i class="bi bi-search"></i>
+                </div>
+                <h3 class="step-title">1. Realizar un Análisis Interno y Externo</h3>
+                <div class="step-divider"></div>
+                <div class="text-start">
+                    <p class="step-description">El primer paso de una planificación estratégica comienza evaluando la posición actual de la empresa tanto a nivel interno como externo, valorando la industria, la competencia y el público objetivo. Para ello es necesario llevar a cabo
+                        un análisis que ayude a identificar las fortalezas y debilidades de la organización, así como las oportunidades y amenazas que ofrece el mercado..</p>
+                    <p class="step-description">La matriz FODA es la herramienta más indicada para este análisis. También es recomendable recurrir a informes de la industria e incluso comentarios de clientes para comprender sus necesidades y cuál es la mejor forma de resolverlas.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Arrow -->
+        <div class="arrow">
+            <i class="bi bi-arrow-down"></i>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="row step-container">
+            <div class="col-lg-12 step">
+                <div class="step-icon">
+                    <i class="bi bi-bullseye"></i>
+                </div>
+                <h3 class="step-title">2. Establecer una Dirección Organizativa</h3>
+                <div class="step-divider"></div>
+                <div class="text-start">
+                    <p class="step-description">
+                        Después de analizar el entorno, el siguiente paso clave en la planificación estratégica es establecer una dirección organizativa, que se define a través de:
+                    </p>
+                    <ul>
+                        <li><strong>Visión:</strong> Es la declaración que describe el futuro ideal al que aspira la organización. Proporciona una dirección a largo plazo y motiva a todos los miembros de la empresa.</li>
+                        <li><strong>Misión:</strong> Define el propósito actual de la organización, especificando qué hace, a quién sirve y cómo lo hace. Es la base sobre la cual se construyen todas las acciones presentes de la empresa.</li>
+                        <li><strong>Objetivos Estratégicos:</strong> Son metas específicas y medibles que guían la organización hacia su visión. Estos objetivos están alineados con la misión y se establecen para diferentes plazos (corto, mediano y largo plazo).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Arrow -->
+        <div class="arrow">
+            <i class="bi bi-arrow-down"></i>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="row step-container">
+            <div class="col-lg-12 step">
+                <div class="step-icon">
+                    <i class="bi bi-gear"></i>
+                </div>
+                <h3 class="step-title">3. Formular la Estrategia</h3>
+                <div class="step-divider"></div>
+                <div class="text-start">
+                    <p class="step-description">
+                        Formular la estrategia consiste en discutir y elegir la estrategia más adecuada para la organización en función de la situación actual. La estrategia seleccionada definirá qué se debe hacer para alcanzar los objetivos perseguidos. Las principales estrategias
+                        incluyen:
+                    </p>
+                    <ul>
+                        <li><strong>Estrategias Ofensivas (FO):</strong> Diseñadas para aprovechar las oportunidades externas y fortalecer las fortalezas internas para lograr crecimiento o ventaja competitiva.</li>
+                        <li><strong>Estrategias Defensivas (FA):</strong> Orientadas a proteger la organización de las amenazas externas, utilizando las fortalezas internas para minimizar el impacto negativo.</li>
+                        <li><strong>Estrategias de Reorientación (DO):</strong> Aplicadas para ajustar la organización a los cambios en el entorno externo, aprovechando oportunidades mientras se corrigen debilidades.</li>
+                        <li><strong>Estrategias de Supervivencia (DA):</strong> Enfocadas en gestionar las amenazas externas y debilidades internas para asegurar la continuidad operativa y evitar la quiebra.</li>
+                        <li><strong>Estrategia de Diversificación de Productos:</strong> La empresa decide fabricar nuevos productos, similares o distintos a los que produce actualmente.</li>
+                        <li><strong>Estrategia de Diversificación de Mercados:</strong> La empresa planea ingresar a nuevos mercados con sus productos actuales, ampliando su cobertura geográfica.</li>
+                        <li><strong>Estrategia de Liderazgo en Costos:</strong> La empresa se centra en elaborar sus productos con los menores costos del mercado.</li>
+                        <li><strong>Estrategia de Diferenciación:</strong> La empresa ofrece un producto original y único que se destaca en el mercado.</li>
+                        <li><strong>Estrategia de Enfoque:</strong> La empresa dedica su atención a un segmento específico o grupo de clientes, adaptando sus productos y servicios a sus necesidades particulares.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Arrow -->
+        <div class="arrow">
+            <i class="bi bi-arrow-down"></i>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="row step-container">
+            <div class="col-lg-12 step">
+                <div class="step-icon">
+                    <i class="bi bi-play-circle"></i>
+                </div>
+                <h3 class="step-title">4. Ejecución de la Estrategia</h3>
+                <div class="step-divider"></div>
+                <div class="text-start">
+                    <p class="step-description">
+                        Una vez que se ha determinado la estrategia que guiará las acciones, corresponde a la administración de la empresa ejecutar el plan. Este proceso implica:
+                    </p>
+                    <ul>
+                        <li><strong>Dirección de la Acción:</strong> Los ejecutivos organizan y dirigen las acciones necesarias, destinan los recursos adecuados y comunican claramente el plan a todos los miembros de la organización.</li>
+                        <li><strong>Organización de Recursos:</strong> Se aseguran de que los recursos (humanos, financieros, materiales) estén disponibles y sean asignados de manera efectiva para cumplir con el plan.</li>
+                        <li><strong>Comunicación y Coordinación:</strong> Explican, comunican y ordenan el proceso de acuerdo al plan, asegurándose de que todos los miembros de la organización estén alineados con los objetivos.</li>
+                        <li><strong>Gestión de Desviaciones:</strong> El objetivo es obtener los resultados esperados, identificando y eliminando desviaciones o amenazas al logro. Los administradores toman acciones correctivas según el juicio y las circunstancias.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Arrow -->
+        <div class="arrow">
+            <i class="bi bi-arrow-down"></i>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="row step-container">
+            <div class="col-lg-12 step">
+                <div class="step-icon">
+                    <i class="bi bi-bar-chart-line"></i>
+                </div>
+                <h3 class="step-title">5. Control y Evaluación</h3>
+                <div class="step-divider"></div>
+                <div class="text-start">
+                    <p class="step-description">
+                        El control y la evaluación son etapas cruciales en el proceso de planificación estratégica para asegurar que los objetivos se cumplan de manera efectiva. Estas etapas incluyen:
+                    </p>
+                    <ul>
+                        <li><strong>Control:</strong> Se realiza de manera concurrente con la ejecución del plan. Su objetivo es hacer un seguimiento continuo de las actividades para detectar errores y desviaciones en la implementación. Permite ajustar el
+                            curso de acción de manera oportuna para mantener el plan en el camino correcto.</li>
+                        <li><strong>Evaluación:</strong> Consiste en el análisis y estudio tanto del proceso de ejecución como de los resultados obtenidos. Se busca obtener conclusiones que proporcionen retroalimentación valiosa para todos los actores involucrados
+                            y para las fases del proceso, facilitando la mejora continua y la adaptación de estrategias.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container tips-section">
+        <h2 class="tips-title" style="color: rgb(44, 71, 118);">Tips para una Planificación Estratégica Efectiva</h2>
+
+        <div class="row g-4 justify-content-center">
+
+            <!-- Tip 1 -->
+            <div class="col-md-4">
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="bi bi-lightbulb"></i>
+                    </div>
+                    <h3 class="tip-title">Claridad en los Objetivos</h3>
+                    <p class="tip-body">Define objetivos claros y específicos para guiar tu estrategia. Asegúrate de que todos los miembros del equipo comprendan las metas y cómo contribuyen a ellas.</p>
+                </div>
+            </div>
+
+            <!-- Tip 2 -->
+            <div class="col-md-4">
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="bi bi-bar-chart-line"></i>
+                    </div>
+                    <h3 class="tip-title">Análisis del Entorno</h3>
+                    <p class="tip-body">Realiza un análisis exhaustivo del entorno interno y externo de la empresa. Utiliza herramientas como el DAFO para identificar fortalezas, debilidades, oportunidades y amenazas.</p>
+                </div>
+            </div>
+
+            <!-- Tip 3 -->
+            <div class="col-md-4">
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="bi bi-people"></i>
+                    </div>
+                    <h3 class="tip-title">Involucra a tu Equipo</h3>
+                    <p class="tip-body">Incluye a los líderes y empleados en el proceso de planificación. La participación colectiva garantiza una mejor implementación y compromiso con la estrategia.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row g-4 justify-content-center mt-4">
+
+            <!-- Tip 4 -->
+            <div class="col-md-4">
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="bi bi-gear"></i>
+                    </div>
+                    <h3 class="tip-title">Flexibilidad en la Ejecución</h3>
+                    <p class="tip-body">La planificación estratégica no es estática. Mantente flexible y dispuesto a ajustar la estrategia según los cambios en el mercado o en la organización.</p>
+                </div>
+            </div>
+
+            <!-- Tip 5 -->
+            <div class="col-md-4">
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="bi bi-check2-circle"></i>
+                    </div>
+                    <h3 class="tip-title">Evaluación Continua</h3>
+                    <p class="tip-body">Implementa un sistema de seguimiento para evaluar el progreso y medir el éxito de la estrategia. Ajusta el plan según los resultados obtenidos.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="container examples-section">
+        <h2 class="examples-title" style="color: rgb(44, 71, 118);">Ejemplos de Empresas con Planificación Estratégica Exitosa</h2>
+
+        <div class="row g-4">
+            <!-- Ejemplo 1 -->
+            <div class="col-md-4">
+                <div class="card example-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ_sQN-EIQfyvnwUIJm-rSHJwK2dgS5aKScQ&s" class="example-img" alt="Ejemplo Empresa 1">
+                    <div class="card-body example-body">
+                        <h3 class="example-title">Apple Inc.</h3>
+                        <p class="example-text">Apple se ha destacado por su planificación estratégica enfocada en la innovación y la experiencia del usuario. Con su estrategia de diferenciación, ha logrado crear productos como el iPhone que redefinieron la industria tecnológica.</p>
+                        <p class="example-text">Puntos clave: <span class="example-highlight">Innovación, Diferenciación, Marca</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ejemplo 2 -->
+            <div class="col-md-4">
+                <div class="card example-card">
+                    <img src="https://blogs.unsw.edu.au/nowideas/files/2018/03/amazon.jpg" class="example-img" alt="Ejemplo Empresa 2">
+                    <div class="card-body example-body">
+                        <h3 class="example-title">Amazon</h3>
+                        <p class="example-text">Amazon ha utilizado la planificación estratégica para dominar el comercio electrónico a través de su enfoque en la logística eficiente y la expansión continua de servicios como Amazon Prime.</p>
+                        <p class="example-text">Puntos clave: <span class="example-highlight">Logística, Expansión, Innovación</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ejemplo 3 -->
+            <div class="col-md-4">
+                <div class="card example-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlAHSjq7Gk3-FboSL_OMkC42bdCkxD12e4mw&s" class="example-img" alt="Ejemplo Empresa 3">
+                    <div class="card-body example-body">
+                        <h3 class="example-title">Nike</h3>
+                        <p class="example-text">Nike ha utilizado una estrategia de marca fuerte y la innovación en el diseño de productos para mantenerse como líder en la industria de artículos deportivos, con campañas publicitarias icónicas que resuenan a nivel global.</p>
+                        <p class="example-text">Puntos clave: <span class="example-highlight">Marca, Innovación, Publicidad</span></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <div class="container-fluid  footer">
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="index.html">TeamAMD</a>, Todos Los Derechos Reservados.
+                    </div>
+                    <div class="col-md-8 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="index.html">Inicio</a>
+                            <a href="estrategia.html">Planificación Estratégica</a>
+                            <a href="CMI.html">CMI</a>
+                            <a href="RSE.html">RSE</a>
+                            <a href="riesgos.html">G. de Riesgos</a>
+                            <a href="CRM.html">CRM</a>
+                            <a href="rendimiento.html">G. del Rendimiento</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+
+    <script src="https://kit.fontawesome.com/cb87dfdee0.js" crossorigin="anonymous"></script>
+    <!-- JavaScript Librerias -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Enlace Javascript -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

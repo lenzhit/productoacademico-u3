@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CarServ - Car Repair HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/car-rear-solid.svg" rel="icon" type="svg">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- CDN BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .color-b {
+            color: rgb(44, 71, 118);
+        }
+        
+        .bg-b {
+            background-color: rgb(44, 71, 118);
+        }
+        
+        .carousel-item {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .carousel-item h5 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        
+        .carousel-item p {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+
+
+<body class="">
+
+
+    <!-- Navbar -->
+    <nav class=" fixed-top navbar navbar-expand-lg bg-white  navbar-light shadow p-0" id="navbar">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5" style="color: rgb(44, 71, 118);">
+            <h2 class="m-0 "><i class="fa-solid fa-microchip me-2"></i>TeamAMD</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4 bg-dark" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+
+                <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                <a href="estrategia.html" class="nav-item nav-link">Planificación Estratégica</a>
+                <a href="CMI.html" class="nav-item nav-link">CMI</a>
+                <a href="RSE.html" class="nav-item nav-link">RSE</a>
+                <a href="riesgos.html" class="nav-item nav-link">G. de Riesgos</a>
+                <a href="CRM.html" class="nav-item nav-link">CRM</a>
+                <a href="rendimiento.html" class="nav-item nav-link">G. del Rendimiento</a>
+
+
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Título -->
+    <div class="container-fluid py-5" style="margin-top: 75px;">
+        <div class="container text-center">
+            <h1 class="display-7 mb-2 animated slideInDown" style="color: rgb(44, 71, 118);">¿Qué es RSE?</h1>
+        </div>
+    </div>
+    <!-- Título -->
+
+    <!-- Contenido -->
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+                <p class="fs-5">
+                    La responsabilidad social empresarial (RSE) es el compromiso voluntario de las empresas para contribuir al bienestar de la comunidad. Más allá de generar empleo y ofrecer productos o servicios, la RSE impulsa el desarrollo económico, la educación y otras
+                    causas sociales a través de programas específicos. Además, integra valores éticos, respeto por el medio ambiente y principios de sustentabilidad en la visión de negocio de la empresa.
+                </p>
+            </div>
+            <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
+                <div class="row gy-4">
+                    <div>
+                        <img src="https://medialab.unmsm.edu.pe/chiqaqnews/wp-content/uploads/2020/12/art%C3%ADculo.jimenez-1.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contenido -->
+
+
+    <!-- Título -->
+    <div class="container-fluid py-2" style="margin-top: 50px;">
+        <div class="container text-center">
+            <h1 class="display-7 mb-2 animated slideInDown color-b">Objetivos de la RSE</h1>
+        </div>
+    </div>
+    <!-- Título -->
+
+    <!-- Objetivos -->
+    <div class="container-xxl service py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="nav w-100 nav-pills me-4">
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active color-b" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
+                            <i class="fa-solid fa-leaf fa-2x flex-shrink-0 me-3"></i>
+                            <h4 class="m-0 fs-5" >Contribuir al desarrollo sostenible</h4>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 color-b" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
+                            <i class="fa-solid fa-handshake fa-2x flex-shrink-0 me-3"></i>
+                            <h4 class="m-0 fs-5" >Mejorar la imagen de la empresa</h4>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 color-b" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
+                            <i class="fa-solid fa-chart-line fa-2x flex-shrink-0 me-3"></i>
+                            <h4 class="m-0 fs-5" >Aumentar la competitividad</h4>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-0 color-b" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
+                            <i class="fa-solid fa-users fa-2x flex-shrink-0 me-3"></i>
+                            <h4 class="m-0 fs-5" >Mejorar el clima laboral</h4>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="tab-content w-100">
+                        <div class="tab-pane show active " id="tab-pane-1">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="https://camaradecomerciodeoruro.com/wp-content/uploads/2022/04/responsabilidad-social.jpeg" style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-3 color-b">Contribuir al desarrollo sostenible</h3>
+                                    <p><i class="fa fa-check text-success me-3"></i>Las empresas deben equilibrar la sostenibilidad y la productividad de su entorno. Con ello, deben tener en cuenta que sus operaciones no dañen el medio ambiente.</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Adicionalmente, deben promover el desarrollo social y económico de comunidades locales.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane " id="tab-pane-2">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="https://johnmgrillos.com/wp-content/uploads/2022/06/John-Grillos-services-icons-website-1.png" style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-3">Mejorar la imagen de la empresa</h3>
+                                    <p><i class="fa fa-check text-success me-3"></i>Otra de las metas de la RSE es mejorar la imagen de la empresa ante la sociedad en general.</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Esto se logra realizando prácticas éticas y transparentes.</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Por ejemplo, el respeto a los derechos humanos y laborales, así como la promoción de la diversidad e inclusión en el lugar de trabajo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane " id="tab-pane-3">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid h-100 w-100" src="https://johnmgrillos.com/wp-content/uploads/2022/06/John-Grillos-services-icons-website-2.png" style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-3">Aumentar la competitividad</h3>
+                                    <p><i class="fa fa-check text-success me-3"></i>La responsabilidad social empresarial no solo tiene beneficios para la sociedad y el medio ambiente.</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Ya que esta práctica empresarial puede mejorar la eficiencia, reducir costos y aumentar la innovación y creatividad en la empresa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane " id="tab-pane-4">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="https://lgconsultores.com.co/wp-content/uploads/2.-Encuestas-de-clima-laboral-10-preguntas-que-no-deben-faltar_11zon-scaled.webp" style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-3">Mejorar el clima laboral</h3>
+                                    <p><i class="fa fa-check text-success me-3"></i>Otro de los objetivos de la RSE es el mejorar el clima laboral dentro de la empresa, promoviendo la equidad, la igualdad de oportunidades y el respeto a los derechos de los
+                                        trabajadores.
+                                    </p>
+                                    <p><i class="fa fa-check text-success me-3"></i>De este modo, la empresa estará incentivando la motivación, la productividad y la satisfacción de los empleados.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Objetivos -->
+
+
+
+    <!-- Título -->
+    <div class="container-fluid py-2" style="margin-top: 50px;">
+        <div class="container text-center">
+            <h1 class="display-7 mb-2 animated slideInDown color-b">Tipos de RSE</h1>
+        </div>
+    </div>
+    <!-- Título -->
+
+    <!-- Tipos -->
+    <div class="container-xxl py-2" id="tipos">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6 col-md-6 color-b">
+                    <div class="d-flex py-3 px-4">
+                        <i class="fa-solid fa-building fa-3x flex-shrink-0 "></i>
+                        <div class="ps-4">
+                            <h5 class="mb-3">RESPONSABILIDAD SOCIAL CORPORATIVA INTERNA</h5>
+                            <p class="text-dark"><i class="fa fa-check text-success me-3"></i>Condiciones Laborales: Garantizar un entorno de trabajo seguro y saludable, y promover la igualdad de oportunidades. </p>
+                            <p class="text-dark"><i class="fa fa-check text-success me-3"></i>Desarrollo Profesional: Invertir en la capacitación y el desarrollo profesional de los empleados.</p>
+                            <p class="text-dark"><i class="fa fa-check text-success me-3"></i>Salud y Bienestar: Implementar programas de bienestar para mejorar la calidad de vida de los empleados.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 color-b">
+                    <div class="d-flex py-3 px-4">
+                        <i class="fa fa-globe fa-3x flex-shrink-0"></i>
+                        <div class="ps-4">
+                            <h5 class="mb-3">RESPONSABILIDAD SOCIAL CORPORATIVA EXTERNA</h5>
+                            <p class="text-dark"><i class="fa fa-check text-success me-3"></i>Responsabilidad Ambiental: Implementar prácticas sostenibles para reducir la huella de carbono y minimizar el impacto ambiental.
+                            </p>
+                            <p class="text-dark"><i class="fa fa-check text-success me-3"></i>Compromiso Comunitario: Participar en el desarrollo de la comunidad local a través de donaciones, voluntariado y proyectos comunitarios.
+                            </p>
+                            <p class="text-dark"><i class="fa fa-check text-success me-3"></i>Prácticas de Negocios Éticas: Adoptar estándares éticos en todas las operaciones comerciales, incluyendo el comercio justo y la transparencia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 color-b">
+                    <div class="d-flex py-3 px-4">
+                        <i class="fa-solid fa-dollar-sign fa-3x flex-shrink-0 "></i>
+                        <div class="ps-4">
+                            <h5 class="mb-3">RESPONSABILIDAD ECONÓMICA</h5>
+                            <p class="text-dark"><i class="fa fa-check text-success me-3"></i>Sostenibilidad Financiera: Garantizar la viabilidad económica a largo plazo de la empresa, creando valor para los accionistas y contribuyendo al bienestar económico de la sociedad.
+                            </p>
+                            <p class="text-dark"><i class="fa fa-check text-success me-3"></i>Inversiones Responsables: Invertir en proyectos que generen beneficios económicos y sociales, como energías renovables y tecnologías verdes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 color-b">
+                    <div class="d-flex py-3 px-4">
+                        <i class="fa fa-hand-holding-heart fa-3x flex-shrink-0"></i>
+                        <div class="ps-4">
+                            <h5 class="mb-3">RESPONSABILIDAD FILANTRÓPICA</h5>
+                            <p class="text-dark"><i class="fa fa-check text-success me-3"></i>Donaciones y Patrocinios: Realizar contribuciones financieras a causas benéficas y organizaciones sin fines de lucro.
+                            </p>
+                            <p class="text-dark"><i class="fa fa-check text-success me-3"></i>Voluntariado Corporativo: Fomentar la participación de los empleados en actividades de voluntariado durante su tiempo libre o como parte de sus funciones laborales.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 color-b">
+                    <div class="d-flex py-3 px-4">
+                        <i class="fa-solid fa-landmark fa-3x flex-shrink-0 "></i>
+                        <div class="ps-4">
+                            <h5 class="mb-3">RESPONSABILIDAD CULTURAL</h5>
+                            <p class="text-dark"><i class="fa fa-check text-success me-3"></i>Preservación Cultural: Apoyar y promover la conservación del patrimonio cultural y las tradiciones locales. </p>
+                            <p class="text-dark"><i class="fa fa-check text-success me-3"></i>Educación y Cultura: Financiar proyectos educativos y culturales que beneficien a la comunidad y promuevan el desarrollo intelectual y artístico.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 color-b">
+                    <div class="d-flex py-3 px-4">
+                        <i class="fa fa-user-check fa-3x flex-shrink-0"></i>
+                        <div class="ps-4">
+                            <h5 class="mb-3">RESPONSABILIDAD CON LOS CLIENTES</h5>
+                            <p class="text-dark"><i class="fa fa-check text-success me-3"></i>Calidad y Seguridad del Producto: Asegurar que los productos y servicios ofrecidos sean seguros, de alta calidad y cumplan con las normativas vigentes.
+                            </p>
+                            <p class="text-dark"><i class="fa fa-check text-success me-3"></i>Satisfacción del Cliente: Implementar políticas y prácticas para garantizar la satisfacción del cliente y la resolución de sus quejas y sugerencias.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Tipos -->
+
+    <!-- Título -->
+    <div class="container-fluid py-2" style="margin-top: 50px;">
+        <div class="container text-center">
+            <h1 class="display-7 mb-2 animated slideInDown color-b">Beneficios de la RSE</h1>
+        </div>
+    </div>
+    <!-- Título -->
+
+    <!-- Beneficios -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Sección de Título e Imagen -->
+            <div class="col-lg-6 text-center d-flex align-items-center justify-content-center">
+                <div>
+                    <img src="https://img.freepik.com/vector-gratis/ilustracion-concepto-responsabilidad-social-corporativa-diseno-plano_23-2148919275.jpg" class="img-fluid mt-4" alt="Imagen">
+                </div>
+            </div>
+
+            <!-- Sección de Beneficios -->
+            <div class="col-lg-6">
+                <div class="row gy-4">
+                    <!-- Primer Beneficio -->
+                    <div class="col-12 d-flex align-items-start">
+                        <div class="icon-box me-3">
+                            <i class="fas fa-seedling fa-2x color-b"></i>
+                        </div>
+                        <div>
+                            <h4 class="fw-bold color-b">CONTRIBUYE AL DESARROLLO SOSTENIBLE</h4>
+                            <p>Fomenta el desarrollo sostenible y disminuye el impacto ambiental negativo, beneficiando a futuras generaciones.</p>
+                        </div>
+                    </div>
+
+                    <!-- Segundo Beneficio -->
+                    <div class="col-12 d-flex align-items-start">
+                        <div class="icon-box me-3">
+                            <i class="fas fa-handshake fa-2x color-b"></i>
+                        </div>
+                        <div>
+                            <h4 class="fw-bold color-b">MEJORA LA REPUTACIÓN Y LA IMAGEN DE LA EMPRESA</h4>
+                            <p>Mejora la reputación empresarial y fortalece relaciones con grupos de interés.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tercer Beneficio -->
+                    <div class="col-12 d-flex align-items-start">
+                        <div class="icon-box me-3">
+                            <i class="fas fa-users fa-2x color-b"></i>
+                        </div>
+                        <div>
+                            <h4 class="fw-bold color-b">FOMENTA LA LEALTAD DE LOS CLIENTES</h4>
+                            <p>Los clientes prefieren marcas con impacto social y ambiental positivo, eligiéndolas sobre otras.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cuarto Beneficio -->
+                <div class="col-12 d-flex align-items-start">
+                    <div class="icon-box me-3">
+                        <i class="fas fa-users-cog fa-2x color-b"></i>
+                    </div>
+                    <div>
+                        <h4 class="fw-bold color-b">AUMENTA LA MOTIVACIÓN Y SATISFACCIÓN DE LOS EMPLEADOS</h4>
+                        <p>Los empleados se sienten más orgullosos, motivados y satisfechos cuando la empresa tiene impacto positivo.</p>
+                    </div>
+                </div>
+
+                <!-- Quinto Beneficio -->
+                <div class="col-12 d-flex align-items-start">
+                    <div class="icon-box me-3">
+                        <i class="fas fa-hand-holding-usd fa-2x color-b"></i>
+                    </div>
+                    <div>
+                        <h4 class="fw-bold color-b">GENERA EFICIENCIA Y AHORROS</h4>
+                        <p>Genera eficiencia y ahorros al reducir el uso de recursos, energía y residuos, lo que aumenta la rentabilidad.</p>
+                    </div>
+                </div>
+
+                <!-- Sexto Beneficio -->
+                <div class="col-12 d-flex align-items-start">
+                    <div class="icon-box me-3">
+                        <i class="fas fa-chart-line fa-2x color-b"></i>
+                    </div>
+                    <div>
+                        <h4 class="fw-bold color-b">ACCESO A NUEVOS MERCADOS</h4>
+                        <p>La RSE atrae nuevos mercados y mejora la productividad y rentabilidad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Beneficios -->
+
+    <!-- Título -->
+    <div class="container-fluid py-2" style="margin-top: 50px;">
+        <div class="container text-center">
+            <h1 class="display-7 mb-2 animated slideInDown color-b">Tips a Considerar</h1>
+        </div>
+    </div>
+    <!-- Título -->
+
+
+    <div class="container my-5">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <!-- Tip 1 -->
+            <div class="col">
+                <div class="card h-100 w-100">
+                    <div class="card-header bg-b text-light">
+                        <p class="fs-5">Tip<i class="fa-solid fa-1"></i></p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"><i class="fas fa-building color-b me-3"></i>Integrar la RSE en la Cultura Corporativa</h5>
+                        <p class="card-text">La RSE debe ser parte esencial de los valores y la misión de la empresa. No se trata solo de programas aislados, sino de un compromiso continuo que influye en cada aspecto del negocio.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tip 2 -->
+            <div class="col">
+                <div class="card h-100 w-100">
+                    <div class="card-header color-b bg-b text-light">
+                        <p class="fs-5">Tip <i class="fa-solid fa-2"></i></p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"><i class="fas fa-users color-b me-3"></i>Involucrar a los Empleados</h5>
+                        <p class="card-text">Consejo: Los empleados son clave para el éxito de la RSE. Involúcralos en las iniciativas sociales y ambientales, y promueve su participación voluntaria en actividades de la comunidad.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tip 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-header bg-b text-light">
+                        <p class="fs-5">Tip <i class="fa-solid fa-3"></i></p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"><i class="fas fa-handshake color-b me-3"></i>Colaborar con la Comunidad</h5>
+                        <p class="card-text">Consejo: Construye relaciones sólidas con la comunidad local. Escuchar sus necesidades y colaborar en proyectos conjuntos es fundamental para una RSE efectiva.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tip 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-header color-b bg-b text-light">
+                        <p class="fs-5">Tip <i class="fa-solid fa-4"></i></p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"><i class="fas fa-chart-line color-b me-3"></i>Medir y Reportar los Impactos</h5>
+                        <p class="card-text">Consejo: Es crucial medir los resultados de las iniciativas de RSE y comunicar los logros a todas las partes interesadas. Informes de sostenibilidad transparentes generan confianza y credibilidad.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tip 5 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-header bg-b text-light">
+                        <p class="fs-5">Tip <i class="fa-solid fa-5"></i></p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"><i class="fas fa-network-wired color-b me-3"></i>Alianzas Estratégicas</h5>
+                        <p class="card-text">Consejo: Colabora con ONG, gobiernos y otras empresas para potenciar el impacto de las iniciativas de RSE. Las alianzas estratégicas permiten abordar problemas sociales más complejos de manera efectiva.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tip 6 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-header color-b bg-b text-light">
+                        <p class="fs-5">Tip <i class="fa-solid fa-6"></i></p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"><i class="fas fa-recycle color-b me-3"></i>Incorporar la Sostenibilidad en la Cadena de Valor</h5>
+                        <p class="card-text">Consejo: Evalúa el impacto ambiental y social en cada eslabón de la cadena de valor. Opta por proveedores responsables y promueve prácticas sostenibles en toda la operación.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tip 7 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-header bg-b text-light">
+                        <p class="fs-5">Tip <i class="fa-solid fa-7"></i></p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"><i class="fas fa-leaf color-b me-3"></i>Adoptar Modelos de Negocio Sostenibles</h5>
+                        <p class="card-text">Consejo: Integra la sostenibilidad en el modelo de negocio, como la economía circular o la eficiencia energética, lo que puede generar ahorro y nuevas oportunidades de mercado.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tip 8 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-header color-b bg-b text-light">
+                        <p class="fs-5">Tip <i class="fa-solid fa-8"></i></p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"><i class="fas fa-bullhorn color-b me-3"></i>Comunicar de Forma Transparente</h5>
+                        <p class="card-text">Consejo: La comunicación sobre la RSE debe ser clara y veraz. Evita el “greenwashing” (publicidad engañosa sobre prácticas sostenibles) y enfócate en mensajes honestos.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tip 9 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-header bg-b text-light">
+                        <p class="fs-5">Tip <i class="fa-solid fa-9"></i></p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"><i class="fas fa-globe color-b me-3"></i>Alinear la RSE con los Objetivos de Desarrollo Sostenible (ODS)</h5>
+                        <p class="card-text">Consejo: Relaciona las estrategias de RSE con los ODS de la ONU. Esto permite orientar las acciones de la empresa hacia metas globales, incrementando su impacto positivo.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tip 10 -->
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-header color-b bg-b text-light">
+                        <p class="fs-5">Tip <i class="fa-solid fa-1"></i><i class="fa-solid fa-0"></i></p>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold"><i class="fas fa-lightbulb color-b me-3"></i>Innovar a Través de la RSE</h5>
+                        <p class="card-text">Consejo: Aprovecha la RSE como una fuente de innovación. Las empresas pueden desarrollar productos o servicios que resuelvan desafíos sociales o ambientales, generando valor tanto para la sociedad como para el negocio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tips -->
+
+
+    <!-- Título -->
+    <div class="container-fluid py-2" style="margin-top: 50px;">
+        <div class="container text-center">
+            <h1 class="display-7 mb-2 animated slideInDown color-b">Ejemplos en Grandes Tecnológicas
+            </h1>
+        </div>
+    </div>
+    <!-- Título -->
+
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item bg-b active ">
+                <div class="container p-4 m-5">
+                    <h5 class="fs-2 text-light">GOOGLE</h5>
+                    <p class="text-start text-light px-4"><i class="fa-brands fa-google fa-2x text-success me-3"></i>Iniciativas de Energía Renovable: Google ha invertido significativamente en energía renovable para sus centros de datos, con el objetivo de operar al 100% con energía limpia.
+                        Además, la empresa promueve programas de eficiencia energética y sostenibilidad en sus oficinas globales.</p>
+                    <p class="text-start text-light px-4 pb-3"><i class="fa-brands fa-google fa-2x text-success me-3"></i>Google.org: A través de su brazo filantrópico, Google apoya proyectos globales en educación, igualdad y respuesta a desastres, aportando tecnología y recursos financieros para
+                        mejorar la calidad de vida en comunidades necesitadas.</p>
+                </div>
+            </div>
+            <div class="carousel-item bg-b">
+                <div class="container p-4 m-5">
+                    <h5 class="fs-2 text-light">MICROSOFT</h5>
+                    <p class="text-start text-light px-4"><i class="fa-brands fa-windows fa-2x text-success me-3"></i>Compromiso con la Neutralidad de Carbono: Microsoft se comprometió a ser carbono negativo para 2030 y eliminar todas sus emisiones históricas para 2050. La empresa invierte
+                        en tecnologías de captura de carbono y promueve la reducción de su impacto ambiental en toda la cadena de suministro.</p>
+                    <p class="text-start text-light px-4 pb-3"><i class="fa-brands fa-windows fa-2x text-success me-3"></i>Inclusión y Accesibilidad: Microsoft desarrolla herramientas y plataformas que promueven la accesibilidad digital para personas con discapacidades. Su programa "AI for Accessibility"
+                        apoya soluciones innovadoras en este campo.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item bg-b">
+                <div class="container p-4 m-5">
+                    <h5 class="fs-2 text-light">Apple</h5>
+                    <p class="text-start text-light px-4"><i class="fa-brands fa-apple fa-2x text-success me-3"></i>Uso de Materiales Reciclados: Apple ha implementado un programa de reciclaje para recuperar metales raros de dispositivos viejos. La compañía también busca eliminar completamente
+                        los plásticos de su empaquetado y ha diseñado su robot "Daisy" para desensamblar iPhones y recuperar materiales reutilizables.</p>
+                    <p class="text-start text-light px-4 pb-3"><i class="fa-brands fa-apple fa-2x text-success me-3"></i>Diversidad e Inclusión: Apple trabaja activamente para aumentar la diversidad en su fuerza laboral y tiene políticas que promueven la igualdad de género y la representación
+                        de minorías en todos los niveles de la empresa.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item bg-b">
+                <div class="container p-4 m-5">
+                    <h5 class="fs-2 text-light">Intel</h5>
+                    <p class="text-start text-light px-4"><i class="fa-solid fa-microchip fa-2x text-success me-3"></i>Empoderamiento Comunitario y Educación STEM: Intel invierte en programas educativos, especialmente en áreas de ciencias, tecnología, ingeniería y matemáticas (STEM), dirigidos
+                        a jóvenes y comunidades desfavorecidas. Además, la empresa apoya proyectos de innovación tecnológica que buscan resolver problemas sociales.</p>
+                    <p class="text-start text-light px-4 pb-3"><i class="fa-solid fa-microchip fa-2x text-success me-3"></i>Cadena de Suministro Ética: Intel se asegura de que los minerales utilizados en sus productos provengan de fuentes responsables, evitando el uso de "minerales conflictivos"
+                        en su cadena de suministro.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item bg-b">
+                <div class="container p-4 m-5">
+                    <h5 class="fs-2 text-light">Samsumg</h5>
+                    <p class="text-start text-light px-4"><img style="width: 70px;" src="https://cdn.icon-icons.com/icons2/2845/PNG/512/samsung_logo_icon_181348.png" alt="">Innovación Sostenible: Samsung ha establecido iniciativas para reducir su huella de carbono y promover el reciclaje.
+                        La empresa también se compromete a diseñar productos con un menor impacto ambiental y eficiencia energética.</p>
+                    <p class="text-start text-light px-4 pb-3"><img style="width: 70px;" src="https://cdn.icon-icons.com/icons2/2845/PNG/512/samsung_logo_icon_181348.png" alt="">Programas Educativos y Comunitarios: A través de su programa "Samsung Solve for Tomorrow", la compañía fomenta la creatividad
+                        y la innovación entre estudiantes, ayudándoles a desarrollar soluciones tecnológicas para problemas comunitarios.</p>
+                </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid  footer pt-5 mt-5">
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="index.html">TeamAMD</a>, Todos Los Derechos Reservados.
+                    </div>
+                    <div class="col-md-8 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="index.html">Inicio</a>
+                            <a href="estrategia.html">Planificación Estratégica</a>
+                            <a href="CMI.html">CMI</a>
+                            <a href="RSE.html">RSE</a>
+                            <a href="riesgos.html">G. de Riesgos</a>
+                            <a href="CRM.html">CRM</a>
+                            <a href="rendimiento.html">G. del Rendimiento</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+
+    <script src="https://kit.fontawesome.com/cb87dfdee0.js" crossorigin="anonymous"></script>
+    <!-- JavaScript Librerias -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <!-- Enlace Javascript -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
